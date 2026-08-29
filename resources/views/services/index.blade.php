@@ -69,90 +69,181 @@
     </section>
     <!-- END SERVICE GRID -->
 
-    <!-- START PRICING TABLE -->
-    <div class="pricing-table-area section-padding" style="background-image: url({{ asset('assets/img/bg/pricing-bg.jpg') }}); background-size:cover; background-position:center;">
-        <div class="container">										
-            <div class="section-title text-center">
-                <h2 class="section-title-white">Pricing Plan</h2>
-                <p class="section-title-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            </div>				
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-                    <div class="pricingTable blue">
-                        <div class="pricingTable-header">
-                            <div class="price-value">
-                                <span class="currency">$</span>
-                                <span class="amount">20</span>
-                                <span class="duration">/month</span>
-                            </div>
-                        </div>
-                        <div class="pricing-content">
-                            <h3 class="title">Business</h3>
-                            <ul>
-                                <li>PSD to HTML</li>
-                                <li>WordPress Theme</li>
-                                <li>WordPress Plugin</li>
-                                <li>Logo Design</li>
-                                <li>WordPress Customization</li>
-                            </ul>
-                        </div>
-                        <div class="pricingTable-signup">
-                            <a href="#">Order Now</a>
-                        </div>
-                    </div>
-                </div><!--- END COL -->
-                <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-                    <div class="pricingTable blue">
-                        <div class="pricingTable-header">
-                            <div class="price-value">
-                                <span class="currency">$</span>
-                                <span class="amount">60</span>
-                                <span class="duration">/month</span>
-                            </div>
-                        </div>
-                        <div class="pricing-content">
-                            <h3 class="title">Standard</h3>
-                            <ul>
-                                <li>PSD to HTML</li>
-                                <li>WordPress Theme</li>
-                                <li>WordPress Plugin</li>
-                                <li>Logo Design</li>
-                                <li>WordPress Customization</li>
-                            </ul>
-                        </div>
-                        <div class="pricingTable-signup">
-                            <a href="#">Order Now</a>
+    
+<!-- START PRICING TABLE -->
+<div class="pricing-table-area section-padding" style="background-image: url({{ asset('assets/img/bg/pricing-bg.jpg') }}); background-size:cover; background-position:center;">
+    <div class="container">
+
+        <div class="section-title text-center">
+            <h2 class="section-title-white">Monthly IT Service Plans</h2>
+            <p class="section-title-white">
+                Flexible dedicated IT support for businesses that need reliable development,
+                automation, ecommerce, marketing, and digital solutions.
+            </p>
+        </div>
+
+        <div class="row">
+
+            <!-- STARTER PLAN -->
+            <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp"
+                 data-wow-duration="1s"
+                 data-wow-delay="0.2s"
+                 data-wow-offset="0">
+
+                <div class="pricingTable blue">
+
+                    <div class="pricingTable-header">
+                        <div class="price-value">
+                            <span class="currency">$</span>
+                            <span class="amount">3,499</span>
+                            <span class="duration">/month</span>
                         </div>
                     </div>
-                </div><!--- END COL -->
-                <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
-                    <div class="pricingTable blue">
-                        <div class="pricingTable-header">
-                            <div class="price-value">
-                                <span class="currency">$</span>
-                                <span class="amount">90</span>
-                                <span class="duration">/month</span>
-                            </div>
-                        </div>
-                        <div class="pricing-content">
-                            <h3 class="title">Professional</h3>
-                            <ul>
-                                <li>PSD to HTML</li>
-                                <li>WordPress Theme</li>
-                                <li>WordPress Plugin</li>
-                                <li>Logo Design</li>
-                                <li>WordPress Customization</li>
-                            </ul>
-                        </div>
-                        <div class="pricingTable-signup">
-                            <a href="#">Order Now</a>
+
+                    <div class="pricing-content">
+
+                        <h3 class="title">Starter</h3>
+
+                        <p style="margin-bottom: 20px;">
+                            <strong>Up to 30 hours/week</strong>
+                        </p>
+
+                        <ul>
+                            <li>Software Development</li>
+                            <li>Digital Marketing</li>
+                            <li>SEO</li>
+                            <li>Shopify Ecommerce</li>
+                        </ul>
+
+                        <p style="margin-top: 20px; font-size: 14px;">
+                            Choose any <strong>2 services</strong> from the included services.
+                        </p>
+
+                        <p style="font-size: 14px;">
+                            Dedicated support, weekly progress updates and
+                            approximately 130 hours/month.
+                        </p>
+
+                    </div>
+
+                    <div class="pricingTable-signup">
+                        <a href="#">Get Started</a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END STARTER PLAN -->
+
+
+            <!-- BUSINESS PLAN -->
+            <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp"
+                 data-wow-duration="1s"
+                 data-wow-delay="0.3s"
+                 data-wow-offset="0">
+
+                <div class="pricingTable blue">
+
+                    <div class="pricingTable-header">
+                        <div class="price-value">
+                            <span class="currency">$</span>
+                            <span class="amount">4,499</span>
+                            <span class="duration">/month</span>
                         </div>
                     </div>
-                </div><!--- END COL -->
-            </div><!--- END ROW -->
-        </div><!--- END CONTAINER -->	
+
+                    <div class="pricing-content">
+
+                        <h3 class="title">Business</h3>
+
+                        <p style="margin-bottom: 20px;">
+                            <strong>Up to 30 hours/week</strong>
+                        </p>
+
+                        <ul>
+                            <li>Software Development</li>
+                            <li>AI Automations</li>
+                            <li>Digital Marketing</li>
+                            <li>SEO</li>
+                            <li>Shopify Ecommerce</li>
+                        </ul>
+
+                        <p style="margin-top: 20px; font-size: 14px;">
+                            Choose any <strong>2 services</strong> from the included services.
+                        </p>
+
+                        <p style="font-size: 14px;">
+                            Priority support, dedicated resources,
+                            weekly communication and approximately 130 hours/month.
+                        </p>
+
+                    </div>
+
+                    <div class="pricingTable-signup">
+                        <a href="#">Get Started</a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END BUSINESS PLAN -->
+
+
+            <!-- PROFESSIONAL PLAN -->
+            <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp"
+                 data-wow-duration="1s"
+                 data-wow-delay="0.4s"
+                 data-wow-offset="0">
+
+                <div class="pricingTable blue">
+
+                    <div class="pricingTable-header">
+                        <div class="price-value">
+                            <span class="currency">$</span>
+                            <span class="amount">5,499</span>
+                            <span class="duration">/month</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing-content">
+
+                        <h3 class="title">Professional</h3>
+
+                        <p style="margin-bottom: 20px;">
+                            <strong>Up to 30 hours/week</strong>
+                        </p>
+
+                        <ul>
+                            <li>Software Development</li>
+                            <li>AI Automations</li>
+                            <li>Digital Marketing</li>
+                            <li>SEO</li>
+                            <li>Shopify Ecommerce</li>
+                            <li>Mobile Applications</li>
+                        </ul>
+
+                        <p style="margin-top: 20px; font-size: 14px;">
+                            Choose any <strong>2 services</strong> from the included services.
+                        </p>
+
+                        <p style="font-size: 14px;">
+                            Senior-level support, priority development,
+                            strategy meetings and approximately 130 hours/month.
+                        </p>
+
+                    </div>
+
+                    <div class="pricingTable-signup">
+                        <a href="#">Get Started</a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END PROFESSIONAL PLAN -->
+
+        </div>
     </div>
-    <!-- END PRICING TABLE -->
+</div>
+<!-- END PRICING TABLE -->
+
 
     <!-- START PARTNER LOGO SECTION -->
 <div class="partner-logo section-padding" style="clear: both; display: block; width: 100%; background: #fff;">

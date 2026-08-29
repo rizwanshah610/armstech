@@ -218,3 +218,825 @@
       margin-right: calc(-50vw + 50%) !important;
   }
   
+  
+/* =============================================================
+   SERVICES PAGE - FINAL RESPONSIVE FIX
+   ============================================================= */
+
+
+/* =============================================================
+   1200px+ DESKTOP
+   3 SERVICES PER ROW
+   3 PRICING PLANS PER ROW
+   ============================================================= */
+
+@media (min-width: 1200px) {
+
+    /* SERVICES */
+
+    .service_area .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .service_area .row > .col-lg-4 {
+        float: none !important;
+        display: flex;
+        flex-direction: column;
+        width: 33.33333333%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .service_area .single_service {
+        width: 100% !important;
+        height: 380px !important;
+        min-height: 380px !important;
+        padding: 40px 20px !important;
+        position: relative !important;
+    }
+
+
+    /* PRICING */
+
+    .pricing-table-area .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .pricing-table-area .row > .col-lg-4 {
+        float: none !important;
+        display: flex;
+        flex-direction: column;
+        width: 33.33333333%;
+    }
+
+    .pricing-table-area .pricingTable {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+
+/* =============================================================
+   992px - 1199px
+   ============================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* SERVICES */
+
+    .service_area .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .service_area .row > .col-lg-4 {
+        float: none !important;
+        display: flex;
+        width: 33.33333333%;
+        margin-bottom: 30px !important;
+    }
+
+    .service_area .single_service {
+        width: 100% !important;
+        height: 360px !important;
+        min-height: 360px !important;
+        padding: 32px 18px !important;
+        position: relative !important;
+    }
+
+    .service_area .single_service img {
+        max-width: 60px !important;
+        max-height: 60px !important;
+        height: auto !important;
+        width: auto !important;
+        margin-bottom: 18px !important;
+    }
+
+    .service_area .single_service h4 {
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .service_area .single_service p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+
+    /* PRICING */
+
+    .pricing-table-area .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pricing-table-area .row > .col-lg-4 {
+        float: none !important;
+        display: flex;
+        width: 33.33333333%;
+    }
+
+    .pricing-table-area .pricingTable {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .pricingTable .price-value {
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+    .pricingTable .price-value .amount {
+        font-size: 45px !important;
+    }
+
+    .pricingTable .pricing-content {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+}
+
+
+/* =============================================================
+   768px - 991px
+   TABLET
+   2 SERVICES PER ROW
+   2 PRICING PLANS PER ROW
+   ============================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* SERVICES */
+
+    .service_area .row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    .service_area .row > .col-sm-6 {
+        float: none !important;
+        display: flex !important;
+        width: 50% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 25px !important;
+    }
+
+    .service_area .single_service {
+        width: 100% !important;
+        height: 350px !important;
+        min-height: 350px !important;
+        padding: 30px 18px !important;
+        position: relative !important;
+    }
+
+    .service_area .single_service img {
+        max-width: 55px !important;
+        max-height: 55px !important;
+        width: auto !important;
+        height: auto !important;
+        margin-bottom: 15px !important;
+    }
+
+    .service_area .single_service h4 {
+        font-size: 19px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .service_area .single_service p {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+    }
+
+    .service_area .single_service > div:last-child {
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 25px !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+
+    /* PRICING */
+
+    .pricing-table-area .row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+
+    .pricing-table-area .row > .col-sm-6 {
+        float: none !important;
+        display: flex !important;
+        width: 50% !important;
+        margin-bottom: 30px !important;
+    }
+
+    .pricing-table-area .pricingTable {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 600px !important;
+    }
+
+    .pricingTable .price-value {
+        width: 120px !important;
+        height: 120px !important;
+        padding: 20px 5px !important;
+    }
+
+    .pricingTable .price-value .currency {
+        font-size: 25px !important;
+    }
+
+    .pricingTable .price-value .amount {
+        font-size: 38px !important;
+        line-height: 52px !important;
+    }
+
+    .pricingTable .price-value .duration {
+        font-size: 12px !important;
+    }
+
+    .pricingTable .pricing-content {
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+    }
+
+    .pricingTable .pricing-content .title {
+        font-size: 24px !important;
+    }
+
+    .pricingTable .pricing-content ul li {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+
+    .pricingTable-signup {
+        margin-top: 20px;
+    }
+}
+
+
+/* =============================================================
+   576px - 767px
+   LARGE MOBILE / SMALL TABLET
+   EVERYTHING SINGLE COLUMN
+   ============================================================= */
+
+@media (max-width: 767px) {
+
+    /* =========================================================
+       SERVICE SECTION
+       ========================================================= */
+
+    .service_area {
+        width: 100% !important;
+        padding: 50px 0 !important;
+        overflow: hidden !important;
+    }
+
+    .service_area .container {
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .service_area .row {
+        display: block !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .service_area .row > .col-lg-4,
+    .service_area .row > .col-sm-6,
+    .service_area .row > .col-xs-12 {
+        display: block !important;
+        float: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 25px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+
+    /* SERVICE CARD */
+
+    .service_area .single_service {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+
+        padding: 30px 20px 85px !important;
+
+        position: relative !important;
+        overflow: hidden !important;
+
+        text-align: center !important;
+    }
+
+
+    /* SERVICE ICON */
+
+    .service_area .single_service img {
+        display: inline-block !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        max-width: 60px !important;
+        max-height: 60px !important;
+
+        margin: 0 auto 18px !important;
+    }
+
+
+    /* SERVICE TITLE */
+
+    .service_area .single_service h4 {
+        display: block !important;
+
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+
+        margin: 0 0 14px !important;
+
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+    }
+
+
+    /* SERVICE DESCRIPTION */
+
+    .service_area .single_service p {
+        display: block !important;
+
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+
+        margin: 0 !important;
+
+        max-width: 100% !important;
+
+        overflow-wrap: break-word !important;
+    }
+
+
+    /* MORE INFO BUTTON */
+
+    .service_area .single_service > div:last-child {
+        position: absolute !important;
+
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 25px !important;
+
+        width: 100% !important;
+
+        text-align: center !important;
+    }
+
+    .service_area .single_service .btn_one {
+        display: inline-block !important;
+        margin: 0 auto !important;
+    }
+
+
+    /* =========================================================
+       PRICING SECTION
+       ========================================================= */
+
+    .pricing-table-area {
+        width: 100% !important;
+        overflow: hidden !important;
+
+        padding: 55px 0 !important;
+    }
+
+    .pricing-table-area .container {
+        width: 100% !important;
+
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .pricing-table-area .section-title {
+        width: 100% !important;
+
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+
+        margin-bottom: 35px !important;
+    }
+
+    .pricing-table-area .section-title h2 {
+        font-size: 28px !important;
+        line-height: 1.35 !important;
+    }
+
+    .pricing-table-area .section-title p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* PRICING ROW */
+
+    .pricing-table-area .row {
+        display: block !important;
+
+        width: 100% !important;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+
+    /* PRICING COLUMNS */
+
+    .pricing-table-area .row > .col-lg-4,
+    .pricing-table-area .row > .col-sm-6,
+    .pricing-table-area .row > .col-xs-12 {
+        display: block !important;
+
+        float: none !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        margin-bottom: 30px !important;
+    }
+
+
+    /* PRICING CARD */
+
+    .pricing-table-area .pricingTable {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        margin: 0 !important;
+    }
+
+
+    /* PRICING HEADER */
+
+    .pricingTable .pricingTable-header {
+        margin-bottom: 30px !important;
+    }
+
+
+    /* PRICE CIRCLE */
+
+    .pricingTable .price-value {
+        width: 120px !important;
+        height: 120px !important;
+
+        padding: 20px 5px !important;
+
+        margin: 0 !important;
+    }
+
+    .pricingTable .price-value .currency {
+        font-size: 24px !important;
+        line-height: 25px !important;
+    }
+
+    .pricingTable .price-value .amount {
+        font-size: 38px !important;
+        line-height: 50px !important;
+    }
+
+    .pricingTable .price-value .duration {
+        font-size: 12px !important;
+        line-height: 16px !important;
+    }
+
+
+    /* PRICING CONTENT */
+
+    .pricingTable .pricing-content {
+        width: auto !important;
+
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+
+        padding: 22px 15px 35px !important;
+    }
+
+    .pricingTable .pricing-content .title {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+    }
+
+    .pricingTable .pricing-content ul {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+    }
+
+    .pricingTable .pricing-content ul li {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        padding: 8px 0 !important;
+    }
+
+    .pricingTable .pricing-content p {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+    }
+
+
+    /* SIGN UP */
+
+    .pricingTable-signup {
+        width: 100% !important;
+        text-align: center !important;
+
+        padding: 0 15px 25px !important;
+    }
+
+    .pricingTable-signup a {
+        display: inline-block !important;
+
+        max-width: 100% !important;
+
+        padding: 11px 25px !important;
+
+        font-size: 13px !important;
+    }
+}
+
+
+/* =============================================================
+   575px AND BELOW
+   ============================================================= */
+
+@media (max-width: 575px) {
+
+    /* SERVICES */
+
+    .service_area {
+        padding: 45px 0 !important;
+    }
+
+    .service_area .container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .service_area .single_service {
+        padding: 28px 18px 80px !important;
+    }
+
+    .service_area .single_service img {
+        max-width: 55px !important;
+        max-height: 55px !important;
+    }
+
+    .service_area .single_service h4 {
+        font-size: 19px !important;
+    }
+
+    .service_area .single_service p {
+        font-size: 13px !important;
+    }
+
+
+    /* PRICING */
+
+    .pricing-table-area {
+        padding: 45px 0 !important;
+    }
+
+    .pricing-table-area .container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .pricing-table-area .section-title h2 {
+        font-size: 25px !important;
+    }
+
+    .pricing-table-area .section-title p {
+        font-size: 13px !important;
+    }
+
+    .pricingTable .price-value {
+        width: 112px !important;
+        height: 112px !important;
+        padding: 18px 4px !important;
+    }
+
+    .pricingTable .price-value .currency {
+        font-size: 21px !important;
+    }
+
+    .pricingTable .price-value .amount {
+        font-size: 34px !important;
+        line-height: 45px !important;
+    }
+
+    .pricingTable .price-value .duration {
+        font-size: 11px !important;
+    }
+
+    .pricingTable .pricing-content {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+
+        padding: 20px 12px 30px !important;
+    }
+
+    .pricingTable .pricing-content .title {
+        font-size: 22px !important;
+    }
+
+    .pricingTable .pricing-content ul li {
+        font-size: 13px !important;
+    }
+
+    .pricingTable .pricing-content p {
+        font-size: 12px !important;
+    }
+}
+
+
+/* =============================================================
+   480px AND BELOW
+   ============================================================= */
+
+@media (max-width: 480px) {
+
+    /* SERVICE */
+
+    .service_area .single_service {
+        padding: 25px 15px 78px !important;
+    }
+
+    .service_area .single_service img {
+        max-width: 50px !important;
+        max-height: 50px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .service_area .single_service h4 {
+        font-size: 18px !important;
+    }
+
+    .service_area .single_service p {
+        font-size: 12px !important;
+        line-height: 1.65 !important;
+    }
+
+
+    /* PRICING */
+
+    .pricingTable .price-value {
+        width: 105px !important;
+        height: 105px !important;
+    }
+
+    .pricingTable .price-value .currency {
+        font-size: 19px !important;
+    }
+
+    .pricingTable .price-value .amount {
+        font-size: 31px !important;
+        line-height: 42px !important;
+    }
+
+    .pricingTable .price-value .duration {
+        font-size: 10px !important;
+    }
+
+    .pricingTable .pricing-content {
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+    }
+
+    .pricingTable .pricing-content .title {
+        font-size: 21px !important;
+    }
+
+    .pricingTable .pricing-content ul li {
+        font-size: 12px !important;
+    }
+
+    .pricingTable-signup a {
+        font-size: 12px !important;
+        padding: 10px 20px !important;
+    }
+}
+
+
+/* =============================================================
+   375px AND BELOW
+   ============================================================= */
+
+@media (max-width: 375px) {
+
+    .service_area {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .service_area .container {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .service_area .single_service {
+        padding: 22px 12px 75px !important;
+    }
+
+    .service_area .single_service h4 {
+        font-size: 17px !important;
+    }
+
+    .service_area .single_service p {
+        font-size: 11px !important;
+    }
+
+
+    .pricing-table-area {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .pricing-table-area .container {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .pricingTable .price-value {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .pricingTable .price-value .amount {
+        font-size: 29px !important;
+    }
+
+    .pricingTable .pricing-content {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    .pricingTable .pricing-content ul li {
+        font-size: 11px !important;
+    }
+}
+
+
+/* =============================================================
+   GLOBAL MOBILE OVERFLOW FIX
+   ============================================================= */
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .service_area,
+    .pricing-table-area {
+        overflow-x: hidden !important;
+    }
+
+    .service_area img,
+    .pricing-table-area img {
+        max-width: 100% !important;
+    }
+
+    .service_area .row,
+    .pricing-table-area .row {
+        max-width: 100% !important;
+    }
+}

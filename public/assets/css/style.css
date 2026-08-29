@@ -1073,14 +1073,14 @@ display: inline-block;
     bottom: 5px;
 }
 .pricingTable .price-value .currency{
-    font-size: 35px;
+    font-size: 30px;
     line-height: 35px;
     display: inline-block;
     vertical-align: top;
     margin: 0 -3px 0 0;
 }
 .pricingTable .price-value .amount{
-    font-size: 52px;
+    font-size: 32px;
     line-height: 70px;
     display: inline-block;
 }
