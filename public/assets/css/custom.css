@@ -1,0 +1,196 @@
+/* =====================================================
+   ABOUT PAGE — TABLET GAP FIX (992px – 1199px range)
+   Covers iPad landscape and similar tablet widths that
+   responsive.css doesn't fully handle.
+   ===================================================== */
+   @media only screen and (max-width: 1199px) and (min-width: 768px) {
+
+    .single_about_content {
+        padding: 40px;
+    }
+    .single_about_content h2 {
+        font-size: 36px;
+    }
+
+    .single_service {
+        padding: 40px 25px;
+    }
+
+    .single_feature {
+        padding: 35px 20px;
+    }
+
+    .single_why_choose h2 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .hire_us_box {
+        padding: 40px 30px;
+    }
+    .hire_content h2 {
+        font-size: 30px;
+    }
+    .hire_img i {
+        font-size: 90px !important;
+    }
+
+    .testimonial_img img {
+        width: 80px;
+    }
+
+    .single-team img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* =====================================================
+   ABOUT PAGE — Ensure full tablet range consistency
+   (merges with responsive.css breakpoints, doesn't fight them)
+   ===================================================== */
+@media only screen and (max-width: 991px) {
+
+    .hire_us_box {
+        padding: 35px 25px;
+    }
+    .hire_content h2 {
+        font-size: 28px;
+    }
+    .hire_img i {
+        font-size: 80px !important;
+    }
+
+    .section-top-title h1 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hire_us_box {
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .hire_img {
+        margin-bottom: 15px;
+    }
+    .hire_img i {
+        font-size: 70px !important;
+    }
+    .hire_content h2 {
+        font-size: 24px;
+    }
+
+    .single_about_content {
+        margin-top: 30px !important;
+        padding: 25px !important;
+    }
+}
+
+/* =====================================================
+   TEAM SECTION — Fix oversized/distorted images
+   ===================================================== */
+   .single-team {
+    box-sizing: border-box;
+}
+
+.single-team img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    box-sizing: border-box;   /* border ab width ke andar count hoga, bahar nahi */
+    display: block;
+    margin: 0 auto 15px;
+}
+
+@media only screen and (max-width: 991px) {
+    .single-team img {
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .single-team img {
+        height: 240px;
+    }
+}
+
+
+/* =====================================================
+   ABOUT — CEO photo: constrain height, prevent overlap
+   ===================================================== */
+   .about_img_wrap {
+    height: 480px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.about_img_wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* Clearfix — Bootstrap 3 floated columns need this */
+.about_area .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 991px) {
+    .about_img_wrap {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .about_img_wrap {
+        height: 320px;
+    }
+}
+
+/* =====================================================
+   BREADCRUMB (used site-wide)
+   ===================================================== */
+   .page-breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.page-breadcrumb li {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.page-breadcrumb li a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+.page-breadcrumb li a:hover {
+    color: #ffaa17;
+}
+.page-breadcrumb li.separator {
+    color: rgba(255,255,255,0.5);
+    margin: 0 10px;
+}
+.page-breadcrumb li.current {
+    color: #ffaa17;
+    font-weight: 500;
+}
+@media only screen and (max-width: 575px) {
+    .page-breadcrumb li { font-size: 12px; }
+    .page-breadcrumb li.separator { margin: 0 6px; }
+}
+
+
+/* Override the fixed blue overlay so breadcrumb color actually shows */
+.section-top:before {
+    background: transparent;
+    opacity: 1;
+}

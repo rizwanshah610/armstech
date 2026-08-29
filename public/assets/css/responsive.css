@@ -1,0 +1,220 @@
+/* =============================================================
+   RESPONSIVE.CSS — Complete Mobile-First Overrides
+   Breakpoints: 1199 | 991 | 768 | 575 | 480 | 375
+   ============================================================= */
+
+
+/* =============================================================
+   DESKTOP — Reliable centering (Bootstrap 3 offset fallback)
+   ============================================================= */
+   @media only screen and (min-width: 992px) {
+      .testimonial_area .col-lg-10.col-lg-offset-1,
+      .contact_area .col-lg-10.col-lg-offset-1 {
+          max-width: 900px;
+          margin-left: auto;
+          margin-right: auto;
+          float: none;
+      }
+  }
+  
+  
+  /* =============================================================
+     1199px — Large tablets / small laptops
+     ============================================================= */
+  @media only screen and (max-width: 1199px) {
+      /* ── Navbar ── */
+      #main-navbar { padding: 12px 0; }
+      .navbar-desktop-nav { display: none !important; }
+      .navbar-hamburger    { display: block !important; }
+  
+      /* ── Hero ── */
+      .hero-text h2  { font-size: 48px; line-height: 60px; }
+      .hero-text p   { font-size: 16px; width: 80%; margin: 0 auto 24px; }
+  
+      /* ── Features ── */
+      .single_feature { padding: 30px 20px; }
+  
+      /* ── Skills ── */
+      .skills_area .col-lg-5 { width: 60%; }
+  
+      /* ── Why Choose ── */
+      .single_why_choose h2  { font-size: 44px; line-height: 58px; }
+      .single_why_choose_img { margin-top: 40px; }
+  
+      /* ── Footer ── */
+      .newsletter-form { padding-top: 30px; }
+  }
+  
+  
+  /* =============================================================
+     991px — Tablets landscape
+     ============================================================= */
+  @media only screen and (max-width: 991px) {
+      /* ── Navbar ── */
+      #main-navbar { padding: 12px 0; }
+  
+      /* ── Hero ── */
+      .hero-text h2 { font-size: 40px; line-height: 52px; }
+      .hero-text p  { width: 85%; }
+      .btn_one      { margin-bottom: 10px; }
+  
+      /* ── Section title ── */
+      .section-title h2 { font-size: 34px; }
+  
+      /* ── Features ── */
+      .feature_bg { padding: 30px 15px; }
+      .single_feature { min-height: auto; margin-bottom: 0; }
+  
+      /* ── Counter ── */
+      .single-project { margin-top: 40px; padding: 20px; }
+      .single-project h2.counter-num { font-size: 34px; }
+  
+      /* ── Why Choose ── */
+      .single_why_choose           { margin-bottom: 40px; }
+      .single_why_choose h2        { font-size: 36px; line-height: 48px; }
+      .single_why_choose_img       { text-align: center; margin-top: 0; }
+      .single_why_choose_img img   { max-width: 80%; }
+  
+      /* ── Skills ── */
+      .skills_area .col-lg-5 { width: 70%; float: none; }
+      .skill_bg              { padding: 30px; }
+  
+      /* ── Portfolio ── */
+      .portfolio_filter ul        { flex-wrap: wrap; justify-content: center; }
+      .portfolio_filter ul li     { margin: 4px 5px; }
+      .single-gallery img         { height: 220px; object-fit: cover; width: 100%; }
+  
+      /* ── Promotional ── */
+      .promotional_content        { text-align: center; }
+      .promotional_content img    { width: 100%; margin-bottom: 20px; }
+  
+      /* ── Testimonials ── */
+      .single_testimonial         { margin-bottom: 30px; }
+  
+      /* ── Blog ── */
+      .home_single_blog           { margin-bottom: 30px; }
+  
+      /* ── Contact ── */
+      .contact                    { padding: 20px; }
+  
+      /* ── Footer ── */
+      .footer_logo                { margin-bottom: 30px; }
+      .single_footer              { margin-bottom: 30px; }
+      .newsletter-form            { padding-top: 0; margin-bottom: 30px; }
+  }
+  
+  
+  /* =============================================================
+     768px — Tablets portrait
+     ============================================================= */
+  @media only screen and (max-width: 768px) {
+      /* ── Navbar ── */
+      #main-navbar              { padding: 10px 0; }
+      #main-navbar .site-logo img { max-height: 36px; }
+  
+      /* ── Hero ── */
+      .home_video video         { object-fit: cover; min-height: 100vh; }
+      .hero-text h2             { font-size: 34px; line-height: 46px; }
+      .hero-text p              { font-size: 15px; width: 90%; }
+      .hero-text .btn_one       { display: inline-block; margin: 6px 4px; }
+  
+      /* ── Section title ── */
+      .section-title h2         { font-size: 30px; }
+      .section-title p          { font-size: 15px; }
+  
+      /* ── Features ── */
+      .feature_bg               { padding: 20px 10px; }
+      .single_feature           { padding: 25px 15px; text-align: center; }
+      .single_feature img       { margin: 0 auto 14px; display: block; }
+  
+      /* ── Counter ── */
+      .counter_feature          { padding: 40px 0; }
+      .single-project           { margin-top: 40px; }
+      .single-project h2.counter-num { font-size: 30px; }
+      .video_btn                { margin-top: 30px; }
+  
+      /* ── Why Choose ── */
+      .single_why_choose        { margin-top: 0; margin-bottom: 40px; }
+      .single_why_choose h2     { font-size: 32px; line-height: 46px; }
+      .single_why_choose_img    { margin-top: 10px; text-align: center; }
+      .single_why_choose_img img{ max-width: 90%; }
+  
+      /* ── Portfolio ── */
+      .portfolio_filter ul      { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; padding: 0; margin: 0 0 20px; }
+      .portfolio_filter ul li   { margin: 4px 3px; font-size: 13px; padding: 7px 16px; }
+      .single-gallery img       { height: 200px; object-fit: cover; width: 100%; }
+      .portfolio_btn            { margin-top: 20px; }
+  
+      /* ── Skills ── */
+      .skills_area              { background-attachment: scroll !important; }
+      .skills_area .col-lg-5,
+      .skills_area .col-sm-8    { width: 100%; float: none; }
+      .skill_bg                 { padding: 30px 20px; }
+      .skill_content h2         { font-size: 26px; line-height: 38px; }
+  
+      /* ── Promotional ── */
+      .promotional_content p    { font-size: 15px; }
+  
+      /* ── Testimonials ── */
+      .testimonial_img img      { float: none; display: block; margin: 0 auto 20px; }
+      .single_testimonial       { text-align: center; padding: 20px 15px; }
+  
+      /* ── Blog ── */
+      .home_single_blog         { margin-bottom: 30px; }
+      .blog_title_info h2       { font-size: 16px; }
+      .blog_title_info h2 a     { font-size: 16px; }
+  
+      /* ── Contact ── */
+      .contact_area .section-title h2 { font-size: 26px; }
+      .form-group               { margin-bottom: 14px; }
+      .contact_btn              { width: 100%; }
+  
+      /* ── Partner logos ── */
+      .single_logo              { padding: 12px; }
+  
+      /* ── Footer ── */
+      .footer_logo              { margin-bottom: 24px; }
+      .footer_logo img          { max-height: 36px; }
+      .single_footer            { padding-top: 24px; margin-bottom: 20px; }
+      .footer_copyright p       { font-size: 13px; }
+      .social_profile ul        { display: flex; gap: 8px; padding: 0; }
+      .newsletter-form          { padding-top: 10px; }
+  
+      /* ── BS3 offset reset ── */
+      .col-lg-offset-1          { margin-left: 0; }
+      .col-lg-offset-2          { margin-left: 0; }
+      .offset-lg-1              { margin-left: 0; }
+      .offset-lg-2              { margin-left: 0; }
+  
+      /* misc */
+      .section-padding          { padding: 60px 0; }
+      .our-team                 { margin-bottom: 30px; }
+      .pricingTable             { margin-bottom: 30px; }
+      .blog_search              { margin-top: 40px; }
+      .comment_form textarea    { width: 100%; }
+  }
+  
+  
+  /* =============================================================
+     575px — Large phones (CLOSED AND REPAIRED SYNTAL ENFORCEMENT)
+     ============================================================= */
+  @media only screen and (max-width: 575px) {
+      .hero-text h2 { font-size: 28px; line-height: 38px; }
+      .section-title h2 { font-size: 24px; }
+  }
+  
+  /* =============================================================
+     STRICT FORCE OVERRIDES — Ensures site-footer is always 100% wide
+     ============================================================= */
+  .site-footer {
+      display: block !important;
+      width: 100vw !important;
+      max-width: 100% !important;
+      position: relative !important;
+      left: 0 !important;
+      right: 0 !important;
+      clear: both !important;
+      margin-left: calc(-50vw + 50%) !important;
+      margin-right: calc(-50vw + 50%) !important;
+  }
+  
