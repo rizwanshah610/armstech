@@ -3,55 +3,62 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ServiceResource\Pages;
-use App\Filament\Resources\ServiceResource\RelationManagers;
 use App\Models\Service;
 use Filament\Forms;
-use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class ServiceResource extends Resource
 {
     protected static ?string $model = Service::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
             ->schema([
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
+
                 Forms\Components\TextInput::make('slug')
                     ->required()
                     ->maxLength(255),
+
                 Forms\Components\TextInput::make('icon')
                     ->maxLength(255)
                     ->default(null),
+
                 Forms\Components\TextInput::make('short_description')
                     ->required()
                     ->maxLength(255),
+
                 Forms\Components\Textarea::make('description')
                     ->required()
                     ->columnSpanFull(),
+
                 Forms\Components\TextInput::make('meta_title')
                     ->maxLength(255)
                     ->default(null),
+
                 Forms\Components\TextInput::make('meta_description')
                     ->maxLength(255)
                     ->default(null),
+
                 Forms\Components\FileUpload::make('image')
                     ->image(),
+
                 Forms\Components\TextInput::make('sort_order')
                     ->required()
                     ->numeric()
                     ->default(0),
+
                 Forms\Components\Toggle::make('is_active')
                     ->required(),
+
                 Forms\Components\Toggle::make('show_on_home')
                     ->required(),
             ]);
@@ -63,28 +70,39 @@ class ServiceResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
+
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
+
                 Tables\Columns\TextColumn::make('icon')
                     ->searchable(),
+
                 Tables\Columns\TextColumn::make('short_description')
                     ->searchable(),
+
                 Tables\Columns\TextColumn::make('meta_title')
                     ->searchable(),
+
                 Tables\Columns\TextColumn::make('meta_description')
                     ->searchable(),
+
                 Tables\Columns\ImageColumn::make('image'),
+
                 Tables\Columns\TextColumn::make('sort_order')
                     ->numeric()
                     ->sortable(),
+
                 Tables\Columns\IconColumn::make('is_active')
                     ->boolean(),
+
                 Tables\Columns\IconColumn::make('show_on_home')
                     ->boolean(),
+
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
@@ -93,10 +111,10 @@ class ServiceResource extends Resource
             ->filters([
                 //
             ])
-            ->actions([
+            ->recordActions([
                 Tables\Actions\EditAction::make(),
             ])
-            ->bulkActions([
+            ->toolbarActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
